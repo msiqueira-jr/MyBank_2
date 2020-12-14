@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4160467A5664BD25B4F2C6F2 /* Pods_MyBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C312D238904D815A89A3D45E /* Pods_MyBank.framework */; };
+		B214C61925707A11003DB630 /* loading3.json in Resources */ = {isa = PBXBuildFile; fileRef = B214C61825707A11003DB630 /* loading3.json */; };
+		B214C61C257084E4003DB630 /* lf30_editor_xtbuckez.json in Resources */ = {isa = PBXBuildFile; fileRef = B214C61B257084E4003DB630 /* lf30_editor_xtbuckez.json */; };
+		B27A08592576F85400CD9907 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A08582576F85400CD9907 /* BaseViewController.swift */; };
+		B27A085C2576F8B300CD9907 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A085B2576F8B300CD9907 /* LoadingView.swift */; };
+		B27A08602576F8C600CD9907 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27A085F2576F8C600CD9907 /* LoadingView.xib */; };
+		B27A088925799CF900CD9907 /* InvoiceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27A088825799CF900CD9907 /* InvoiceWorker.swift */; };
+		B29AE22B255B62D500F01D85 /* ButtonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AE229255B62D500F01D85 /* ButtonCollectionCell.swift */; };
+		B29AE22C255B62D500F01D85 /* ButtonCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29AE22A255B62D500F01D85 /* ButtonCollectionCell.xib */; };
+		B2A514D52564A5EA008678E6 /* AddCreditCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A514D42564A5EA008678E6 /* AddCreditCard.storyboard */; };
+		B2A514D82564A6CD008678E6 /* AddCreditCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A514D72564A6CD008678E6 /* AddCreditCardVC.swift */; };
+		B2F44DF7254B965600EE6086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44DF6254B965600EE6086 /* AppDelegate.swift */; };
+		B2F44DF9254B965600EE6086 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44DF8254B965600EE6086 /* SceneDelegate.swift */; };
+		B2F44DFB254B965600EE6086 /* CreditCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44DFA254B965600EE6086 /* CreditCardVC.swift */; };
+		B2F44DFE254B965600EE6086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F44DFC254B965600EE6086 /* Main.storyboard */; };
+		B2F44E00254B965800EE6086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F44DFF254B965800EE6086 /* Assets.xcassets */; };
+		B2F44E03254B965800EE6086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F44E01254B965800EE6086 /* LaunchScreen.storyboard */; };
+		B2F44E0E254B97A600EE6086 /* CreditCardContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E0C254B97A600EE6086 /* CreditCardContainerCell.swift */; };
+		B2F44E0F254B97A600EE6086 /* CreditCardContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F44E0D254B97A600EE6086 /* CreditCardContainerCell.xib */; };
+		B2F44E12254B999800EE6086 /* Cartoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E11254B999800EE6086 /* Cartoes.swift */; };
+		B2F44E16254B9BFB00EE6086 /* CreditCardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E14254B9BFB00EE6086 /* CreditCardCollectionCell.swift */; };
+		B2F44E17254B9BFB00EE6086 /* CreditCardCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F44E15254B9BFB00EE6086 /* CreditCardCollectionCell.xib */; };
+		B2F44E1A254BA0E700EE6086 /* cartoes.json in Resources */ = {isa = PBXBuildFile; fileRef = B2F44E19254BA0E700EE6086 /* cartoes.json */; };
+		B2F44E2425520B1900EE6086 /* CreditCardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E2325520B1800EE6086 /* CreditCardVM.swift */; };
+		B2F44E2A255225E200EE6086 /* Movimentacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E29255225E100EE6086 /* Movimentacao.swift */; };
+		B2F44E2D2552269700EE6086 /* despesas.json in Resources */ = {isa = PBXBuildFile; fileRef = B2F44E2C2552269700EE6086 /* despesas.json */; };
+		B2F44E30255226BE00EE6086 /* ExtratoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E2F255226BE00EE6086 /* ExtratoVM.swift */; };
+		B2F44E3325522AA000EE6086 /* ExtratoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F44E3225522A9F00EE6086 /* ExtratoCell.xib */; };
+		B2F44E3625522AF600EE6086 /* ExtratoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E3525522AF600EE6086 /* ExtratoCell.swift */; };
+		B2F44E3925522DBD00EE6086 /* AccountBalanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E3825522DBD00EE6086 /* AccountBalanceVC.swift */; };
+		B2F44E432554ADF700EE6086 /* CreditCardWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E422554ADF700EE6086 /* CreditCardWorker.swift */; };
+		B2F44E462554B3C800EE6086 /* ExtratoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E452554B3C800EE6086 /* ExtratoWorker.swift */; };
+		B2F44E492554B64D00EE6086 /* invoice.json in Resources */ = {isa = PBXBuildFile; fileRef = B2F44E482554B64C00EE6086 /* invoice.json */; };
+		B2F44E4C2554C25A00EE6086 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E4B2554C25A00EE6086 /* Invoice.swift */; };
+		B2F44E4F2554C39400EE6086 /* InvoiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E4E2554C39400EE6086 /* InvoiceVC.swift */; };
+		B2F44E522554D92700EE6086 /* InvoiceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F44E512554D92700EE6086 /* InvoiceVM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C85E0FFAE62874CF15B0D7C /* Pods-MyBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBank.release.xcconfig"; path = "Target Support Files/Pods-MyBank/Pods-MyBank.release.xcconfig"; sourceTree = "<group>"; };
+		B214C61825707A11003DB630 /* loading3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading3.json; sourceTree = "<group>"; };
+		B214C61B257084E4003DB630 /* lf30_editor_xtbuckez.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lf30_editor_xtbuckez.json; sourceTree = "<group>"; };
+		B27A08582576F85400CD9907 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B27A085B2576F8B300CD9907 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B27A085F2576F8C600CD9907 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		B27A088825799CF900CD9907 /* InvoiceWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceWorker.swift; sourceTree = "<group>"; };
+		B29AE229255B62D500F01D85 /* ButtonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCollectionCell.swift; sourceTree = "<group>"; };
+		B29AE22A255B62D500F01D85 /* ButtonCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCollectionCell.xib; sourceTree = "<group>"; };
+		B2A514D42564A5EA008678E6 /* AddCreditCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddCreditCard.storyboard; sourceTree = "<group>"; };
+		B2A514D72564A6CD008678E6 /* AddCreditCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCreditCardVC.swift; sourceTree = "<group>"; };
+		B2F44DF3254B965600EE6086 /* MyBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F44DF6254B965600EE6086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2F44DF8254B965600EE6086 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B2F44DFA254B965600EE6086 /* CreditCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardVC.swift; sourceTree = "<group>"; };
+		B2F44DFD254B965600EE6086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2F44DFF254B965800EE6086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2F44E02254B965800EE6086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2F44E04254B965800EE6086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F44E0C254B97A600EE6086 /* CreditCardContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardContainerCell.swift; sourceTree = "<group>"; };
+		B2F44E0D254B97A600EE6086 /* CreditCardContainerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardContainerCell.xib; sourceTree = "<group>"; };
+		B2F44E11254B999800EE6086 /* Cartoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartoes.swift; sourceTree = "<group>"; };
+		B2F44E14254B9BFB00EE6086 /* CreditCardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCollectionCell.swift; sourceTree = "<group>"; };
+		B2F44E15254B9BFB00EE6086 /* CreditCardCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardCollectionCell.xib; sourceTree = "<group>"; };
+		B2F44E19254BA0E700EE6086 /* cartoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cartoes.json; sourceTree = "<group>"; };
+		B2F44E2325520B1800EE6086 /* CreditCardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardVM.swift; sourceTree = "<group>"; };
+		B2F44E29255225E100EE6086 /* Movimentacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movimentacao.swift; sourceTree = "<group>"; };
+		B2F44E2C2552269700EE6086 /* despesas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = despesas.json; sourceTree = "<group>"; };
+		B2F44E2F255226BE00EE6086 /* ExtratoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoVM.swift; sourceTree = "<group>"; };
+		B2F44E3225522A9F00EE6086 /* ExtratoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtratoCell.xib; sourceTree = "<group>"; };
+		B2F44E3525522AF600EE6086 /* ExtratoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoCell.swift; sourceTree = "<group>"; };
+		B2F44E3825522DBD00EE6086 /* AccountBalanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceVC.swift; sourceTree = "<group>"; };
+		B2F44E422554ADF700EE6086 /* CreditCardWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardWorker.swift; sourceTree = "<group>"; };
+		B2F44E452554B3C800EE6086 /* ExtratoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoWorker.swift; sourceTree = "<group>"; };
+		B2F44E482554B64C00EE6086 /* invoice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invoice.json; sourceTree = "<group>"; };
+		B2F44E4B2554C25A00EE6086 /* Invoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		B2F44E4E2554C39400EE6086 /* InvoiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceVC.swift; sourceTree = "<group>"; };
+		B2F44E512554D92700EE6086 /* InvoiceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceVM.swift; sourceTree = "<group>"; };
+		C312D238904D815A89A3D45E /* Pods_MyBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5673702EA3D5C09BD0553B9 /* Pods-MyBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBank.debug.xcconfig"; path = "Target Support Files/Pods-MyBank/Pods-MyBank.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2F44DF0254B965600EE6086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4160467A5664BD25B4F2C6F2 /* Pods_MyBank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62BEECAE5F17552707A6E5C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C312D238904D815A89A3D45E /* Pods_MyBank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8113C5602180A995810D9C03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5673702EA3D5C09BD0553B9 /* Pods-MyBank.debug.xcconfig */,
+				9C85E0FFAE62874CF15B0D7C /* Pods-MyBank.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B27A088725799CB700CD9907 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B27A088825799CF900CD9907 /* InvoiceWorker.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B29AE22E255B62D900F01D85 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				B27A085B2576F8B300CD9907 /* LoadingView.swift */,
+				B27A085F2576F8C600CD9907 /* LoadingView.xib */,
+				B2F44E0C254B97A600EE6086 /* CreditCardContainerCell.swift */,
+				B2F44E14254B9BFB00EE6086 /* CreditCardCollectionCell.swift */,
+				B2F44E15254B9BFB00EE6086 /* CreditCardCollectionCell.xib */,
+				B2F44E0D254B97A600EE6086 /* CreditCardContainerCell.xib */,
+				B2F44E3225522A9F00EE6086 /* ExtratoCell.xib */,
+				B2F44E3525522AF600EE6086 /* ExtratoCell.swift */,
+				B29AE229255B62D500F01D85 /* ButtonCollectionCell.swift */,
+				B29AE22A255B62D500F01D85 /* ButtonCollectionCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		B2F44DEA254B965600EE6086 = {
+			isa = PBXGroup;
+			children = (
+				B2F44DF5254B965600EE6086 /* MyBank */,
+				B2F44DF4254B965600EE6086 /* Products */,
+				8113C5602180A995810D9C03 /* Pods */,
+				62BEECAE5F17552707A6E5C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B2F44DF4254B965600EE6086 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2F44DF3254B965600EE6086 /* MyBank.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2F44DF5254B965600EE6086 /* MyBank */ = {
+			isa = PBXGroup;
+			children = (
+				B27A088725799CB700CD9907 /* Network */,
+				B27A08582576F85400CD9907 /* BaseViewController.swift */,
+				B214C61825707A11003DB630 /* loading3.json */,
+				B214C61B257084E4003DB630 /* lf30_editor_xtbuckez.json */,
+				B29AE22E255B62D900F01D85 /* CustomViews */,
+				B2F44E412554ADD600EE6086 /* Worker */,
+				B2F44E27255225C600EE6086 /* Model */,
+				B2F44E2225520AD100EE6086 /* ViewModel */,
+				B2F44DF6254B965600EE6086 /* AppDelegate.swift */,
+				B2F44DF8254B965600EE6086 /* SceneDelegate.swift */,
+				B2F44DFA254B965600EE6086 /* CreditCardVC.swift */,
+				B2F44DFC254B965600EE6086 /* Main.storyboard */,
+				B2A514D42564A5EA008678E6 /* AddCreditCard.storyboard */,
+				B2F44DFF254B965800EE6086 /* Assets.xcassets */,
+				B2F44E01254B965800EE6086 /* LaunchScreen.storyboard */,
+				B2F44E04254B965800EE6086 /* Info.plist */,
+				B2F44E19254BA0E700EE6086 /* cartoes.json */,
+				B2F44E2C2552269700EE6086 /* despesas.json */,
+				B2F44E482554B64C00EE6086 /* invoice.json */,
+				B2F44E3825522DBD00EE6086 /* AccountBalanceVC.swift */,
+				B2F44E4E2554C39400EE6086 /* InvoiceVC.swift */,
+				B2A514D72564A6CD008678E6 /* AddCreditCardVC.swift */,
+			);
+			path = MyBank;
+			sourceTree = "<group>";
+		};
+		B2F44E2225520AD100EE6086 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2F44E2325520B1800EE6086 /* CreditCardVM.swift */,
+				B2F44E2F255226BE00EE6086 /* ExtratoVM.swift */,
+				B2F44E512554D92700EE6086 /* InvoiceVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2F44E27255225C600EE6086 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2F44E4B2554C25A00EE6086 /* Invoice.swift */,
+				B2F44E11254B999800EE6086 /* Cartoes.swift */,
+				B2F44E29255225E100EE6086 /* Movimentacao.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2F44E412554ADD600EE6086 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				B2F44E422554ADF700EE6086 /* CreditCardWorker.swift */,
+				B2F44E452554B3C800EE6086 /* ExtratoWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2F44DF2254B965600EE6086 /* MyBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2F44E07254B965800EE6086 /* Build configuration list for PBXNativeTarget "MyBank" */;
+			buildPhases = (
+				9ABC9D18DAFC184C316F6DF0 /* [CP] Check Pods Manifest.lock */,
+				B2F44DEF254B965600EE6086 /* Sources */,
+				B2F44DF0254B965600EE6086 /* Frameworks */,
+				B2F44DF1254B965600EE6086 /* Resources */,
+				45B1D1A542E736410833F948 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyBank;
+			productName = MyBank;
+			productReference = B2F44DF3254B965600EE6086 /* MyBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2F44DEB254B965600EE6086 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					B2F44DF2254B965600EE6086 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = B2F44DEE254B965600EE6086 /* Build configuration list for PBXProject "MyBank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2F44DEA254B965600EE6086;
+			productRefGroup = B2F44DF4254B965600EE6086 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2F44DF2254B965600EE6086 /* MyBank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2F44DF1254B965600EE6086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B214C61C257084E4003DB630 /* lf30_editor_xtbuckez.json in Resources */,
+				B2F44E492554B64D00EE6086 /* invoice.json in Resources */,
+				B2F44E2D2552269700EE6086 /* despesas.json in Resources */,
+				B214C61925707A11003DB630 /* loading3.json in Resources */,
+				B2F44E0F254B97A600EE6086 /* CreditCardContainerCell.xib in Resources */,
+				B2F44E03254B965800EE6086 /* LaunchScreen.storyboard in Resources */,
+				B2F44E17254B9BFB00EE6086 /* CreditCardCollectionCell.xib in Resources */,
+				B2F44E1A254BA0E700EE6086 /* cartoes.json in Resources */,
+				B2F44E00254B965800EE6086 /* Assets.xcassets in Resources */,
+				B2A514D52564A5EA008678E6 /* AddCreditCard.storyboard in Resources */,
+				B29AE22C255B62D500F01D85 /* ButtonCollectionCell.xib in Resources */,
+				B27A08602576F8C600CD9907 /* LoadingView.xib in Resources */,
+				B2F44DFE254B965600EE6086 /* Main.storyboard in Resources */,
+				B2F44E3325522AA000EE6086 /* ExtratoCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45B1D1A542E736410833F948 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBank/Pods-MyBank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyBank/Pods-MyBank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyBank/Pods-MyBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ABC9D18DAFC184C316F6DF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2F44DEF254B965600EE6086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F44E432554ADF700EE6086 /* CreditCardWorker.swift in Sources */,
+				B2F44E2A255225E200EE6086 /* Movimentacao.swift in Sources */,
+				B2F44E16254B9BFB00EE6086 /* CreditCardCollectionCell.swift in Sources */,
+				B2F44E4C2554C25A00EE6086 /* Invoice.swift in Sources */,
+				B27A08592576F85400CD9907 /* BaseViewController.swift in Sources */,
+				B2F44E0E254B97A600EE6086 /* CreditCardContainerCell.swift in Sources */,
+				B2F44E2425520B1900EE6086 /* CreditCardVM.swift in Sources */,
+				B2F44DFB254B965600EE6086 /* CreditCardVC.swift in Sources */,
+				B2F44E3625522AF600EE6086 /* ExtratoCell.swift in Sources */,
+				B2F44E462554B3C800EE6086 /* ExtratoWorker.swift in Sources */,
+				B29AE22B255B62D500F01D85 /* ButtonCollectionCell.swift in Sources */,
+				B2F44E3925522DBD00EE6086 /* AccountBalanceVC.swift in Sources */,
+				B2F44E522554D92700EE6086 /* InvoiceVM.swift in Sources */,
+				B27A085C2576F8B300CD9907 /* LoadingView.swift in Sources */,
+				B2F44E12254B999800EE6086 /* Cartoes.swift in Sources */,
+				B2F44E30255226BE00EE6086 /* ExtratoVM.swift in Sources */,
+				B2F44DF7254B965600EE6086 /* AppDelegate.swift in Sources */,
+				B27A088925799CF900CD9907 /* InvoiceWorker.swift in Sources */,
+				B2A514D82564A6CD008678E6 /* AddCreditCardVC.swift in Sources */,
+				B2F44DF9254B965600EE6086 /* SceneDelegate.swift in Sources */,
+				B2F44E4F2554C39400EE6086 /* InvoiceVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2F44DFC254B965600EE6086 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2F44DFD254B965600EE6086 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2F44E01254B965800EE6086 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2F44E02254B965800EE6086 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2F44E05254B965800EE6086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2F44E06254B965800EE6086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2F44E08254B965800EE6086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5673702EA3D5C09BD0553B9 /* Pods-MyBank.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DigitalHouse.MyBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2F44E09254B965800EE6086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C85E0FFAE62874CF15B0D7C /* Pods-MyBank.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DigitalHouse.MyBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2F44DEE254B965600EE6086 /* Build configuration list for PBXProject "MyBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F44E05254B965800EE6086 /* Debug */,
+				B2F44E06254B965800EE6086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2F44E07254B965800EE6086 /* Build configuration list for PBXNativeTarget "MyBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2F44E08254B965800EE6086 /* Debug */,
+				B2F44E09254B965800EE6086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2F44DEB254B965600EE6086 /* Project object */;
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UGe-xb-IWF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AddCreditCard-->
+        <scene sceneID="jnE-ic-ZiG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddCreditCard" id="Djg-g9-Vx6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pOU-gk-ZrB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2520" y="-311"/>
+        </scene>
+        <!--Credit CardVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CreditCardVC" customModule="MyBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qAi-1w-lLb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qAi-1w-lLb" secondAttribute="trailing" id="8tK-cK-ZE6"/>
+                            <constraint firstItem="qAi-1w-lLb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hEH-S2-pR0"/>
+                            <constraint firstItem="qAi-1w-lLb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hil-kc-KC0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qAi-1w-lLb" secondAttribute="bottom" id="qPI-2Z-rXX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TJc-NT-Wsu">
+                        <barButtonItem key="backBarButtonItem" title=" " id="eBB-jD-Qd7"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="qAi-1w-lLb" id="GGe-do-daz"/>
+                        <segue destination="lvO-5J-S9W" kind="show" identifier="InvoiceVC" id="2iJ-1e-QK4"/>
+                        <segue destination="Djg-g9-Vx6" kind="presentation" identifier="AddCreditCard" id="eVg-zp-HQi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1933" y="115"/>
+        </scene>
+        <!--Extrato-->
+        <scene sceneID="vas-Lk-Gg1">
+            <objects>
+                <viewController id="YdO-Jd-fLF" customClass="AccountBalanceVC" customModule="MyBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S9T-NP-UYx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ezQ-GZ-Eha">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b0B-Cg-MST"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b0B-Cg-MST" firstAttribute="bottom" secondItem="ezQ-GZ-Eha" secondAttribute="bottom" id="CiS-hq-3ZN"/>
+                            <constraint firstItem="ezQ-GZ-Eha" firstAttribute="top" secondItem="b0B-Cg-MST" secondAttribute="top" id="Ctn-rM-Nnl"/>
+                            <constraint firstItem="ezQ-GZ-Eha" firstAttribute="leading" secondItem="b0B-Cg-MST" secondAttribute="leading" id="O0R-mg-A27"/>
+                            <constraint firstItem="b0B-Cg-MST" firstAttribute="trailing" secondItem="ezQ-GZ-Eha" secondAttribute="trailing" id="YUc-kC-IbI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Extrato" image="dollarsign.circle.fill" catalog="system" id="yyV-ts-DTf"/>
+                    <connections>
+                        <outlet property="timeLineTableView" destination="ezQ-GZ-Eha" id="Lzo-JC-APx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="26G-NO-61p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016" y="-569"/>
+        </scene>
+        <!--Cartões-->
+        <scene sceneID="iio-T6-bHn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Elc-bR-DrX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cartões" image="creditcard.fill" catalog="system" id="Tg6-Qr-jYh">
+                        <color key="badgeColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hFg-cK-z6S">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.2711030955" blue="0.31329474860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PWx-Uu-5ts"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mk0-Yo-xia" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.8840579710145" y="114.50892857142857"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4Dh-hP-xyz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UGe-xb-IWF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d2W-Jg-2vn">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="0.2711030955" blue="0.31329474860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Elc-bR-DrX" kind="relationship" relationship="viewControllers" id="V0x-IK-PiH"/>
+                        <segue destination="YdO-Jd-fLF" kind="relationship" relationship="viewControllers" id="8Bz-Bu-9da"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3JH-A6-nwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="114.50892857142857"/>
+        </scene>
+        <!--Fatura-->
+        <scene sceneID="FXV-eP-6kg">
+            <objects>
+                <viewController id="lvO-5J-S9W" customClass="InvoiceVC" customModule="MyBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kyw-0C-KBG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kAT-UW-Oy8">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="awU-yd-qlM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="awU-yd-qlM" firstAttribute="bottom" secondItem="kAT-UW-Oy8" secondAttribute="bottom" id="JNI-2Y-DSl"/>
+                            <constraint firstItem="kAT-UW-Oy8" firstAttribute="leading" secondItem="awU-yd-qlM" secondAttribute="leading" id="N6l-9f-mvV"/>
+                            <constraint firstItem="kAT-UW-Oy8" firstAttribute="top" secondItem="awU-yd-qlM" secondAttribute="top" id="VuD-YI-QDb"/>
+                            <constraint firstItem="awU-yd-qlM" firstAttribute="trailing" secondItem="kAT-UW-Oy8" secondAttribute="trailing" id="p9J-KN-X40"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fatura" id="bdQ-YV-o5S"/>
+                    <connections>
+                        <outlet property="tableView" destination="kAT-UW-Oy8" id="mma-dC-Th9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G0H-R1-Ia3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2768" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="creditcard.fill" catalog="system" width="128" height="88"/>
+        <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
